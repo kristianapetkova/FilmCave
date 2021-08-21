@@ -1,0 +1,66 @@
+
+/*----*/
+
+/*aside*/
+.accordeon{
+	background-color: #afeeee;
+	width: 100%;
+	border:none;
+	border-radius: 10px;
+	padding: 5px 0px;
+	font-weight: bold;
+}
+aside{
+	width: 30%;
+    margin-right: 3%;
+}
+.panel>ul>li{
+	list-style-type: none;
+}
+main>section>aside>div.panel:nth-child(2){
+	cursor: pointer;
+
+}
+
+/*section*/
+
+.pg_product{
+	margin: 1%;
+	padding: 5px;
+	border:1px ridge transparent;
+}
+.pg_product:hover{
+	border:1px ridge #9ecaed;
+	padding: 5px;
+	cursor: pointer;
+	box-shadow: 0 0 10px #9ecaed;
+}
+.stars{
+	height: 18px;
+}
+.heart, .cart{
+	height: 24px;
+}
+.ngp_poster{
+	height: 250px;
+	
+}
+h3, h5, h4{
+	margin: 0px;
+}
+
+main>h5:nth-child(1){
+	margin: 22.7px 0px;
+}
+
+main>section{
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+.products{
+	display: flex;
+	justify-content: space-around;
+    flex-wrap: wrap;
+}
+

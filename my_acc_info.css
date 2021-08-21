@@ -1,0 +1,156 @@
+aside{
+	display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 200px;
+    justify-content: space-around;
+    margin-right: 2%;
+
+}
+.side_menu{
+	background-color: #afeeee;
+	border:none;
+	border-radius: 5px;
+	padding: 5px 0px;
+	font-weight: bold;
+}
+.side_menu:hover{
+	cursor: pointer;
+	background-color: #1cc2cc;
+}
+.active{
+	background-color: #1cc2cc;
+}
+main>section{
+	display: flex;
+}
+main>section>section{
+	width: 75%;
+    padding-left: 2%;
+    border-left: 1px solid black;
+}
+h1{
+	font-size: 2em;
+}
+.my_info{
+	display: flex;
+}
+.my_info>div{
+	display: flex;
+	flex-direction:column;
+	width: 50%;
+}
+.my_info>div>input{
+	width: 80%;
+}
+.address_head{
+	display: flex;
+    justify-content: space-between;
+}
+.address_head>h2{
+	margin: 0px;
+}
+
+main>section>section>button{
+	margin-top:5%;
+	text-align: center;
+}
+.address_list{
+	display: flex;
+	justify-content: space-between;
+    padding: 10px 0px;
+}
+.buttons{
+	padding: 1%;
+	background-color: #ffd271;
+	border-width: 0px;
+	border-radius: 10px;
+	width: 20%;
+	font-weight: bold;
+}
+.buttons:hover{
+	cursor: pointer;
+	background-color: #ffa071;
+}
+
+#save_data{
+	display: flex;
+	justify-content: center;
+	margin-left: 40%;
+}
+
+.region_city_address{
+	border:none;
+	width: 600px;
+	display: inline-block;
+}
+
+.edit_address:hover, .delete_address:hover{
+	cursor: pointer;
+}
+.delete_address{
+	border:none;
+	background-color: white;
+	font-style: italic;
+	text-decoration: underline;
+	font-family: Trebuchet MS, sans-serif;
+	font-size: 16px;
+}
+
+.region_city_address{
+	background-color: white;
+}
+
+
+
+/*Modal*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  border-radius: 5px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal_address{
+	display: flex;
+	flex-direction: column;
+}
+
+.modal_address>h2{
+	display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

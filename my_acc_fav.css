@@ -1,0 +1,110 @@
+aside{
+	display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 200px;
+    justify-content: space-around;
+    margin-right: 2%;
+
+}
+.side_menu{
+	background-color: #afeeee;
+	border:none;
+	border-radius: 5px;
+	padding: 5px 0px;
+	font-weight: bold;
+}
+.side_menu:hover{
+	cursor: pointer;
+	background-color: #1cc2cc;
+}
+.active{
+	background-color: #1cc2cc;
+}
+
+main>section{
+	display: flex;
+}
+main>section>section{
+	width: 75%;
+    padding-left: 2%;
+    border-left: 1px solid black;
+}
+h1{
+	font-size: 2em;
+	margin-top: 0.5em;
+}
+
+
+/*---*/
+
+.old_price{
+	color: #dadada;
+	text-decoration: line-through;
+	font-size: 0.8em;
+}
+
+#movie_poster{
+	width: 100px;
+	height: 150px;
+	vertical-align: top;
+
+}
+
+.buttons_add_cart{
+	padding: 5%;
+	background-color: #ffd271;
+	border-width: 0px;
+	border-radius: 10px;
+	width: 100%;
+	font-weight: bold;
+}
+.buttons_add_cart:hover{
+	cursor: pointer;
+	background-color: #ffa071;
+}
+
+article{
+	display: flex;
+	justify-content: space-between;
+}
+
+.activity{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.product{
+	display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 60%;
+}
+.pr_info, .pr_poster{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.pr_info{
+	margin-left: 2%;
+}
+.pr_info>div>h2{
+	margin-top:0px;
+}
+
+.activity>span{
+	font-size: smaller;
+}
+hr{
+	background-color: black;
+}
+
+.remove_from_fav{
+	border:none;
+	background-color: white;
+}
+.remove_from_fav:hover{
+	cursor: pointer;
+}

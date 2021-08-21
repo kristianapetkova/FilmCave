@@ -1,0 +1,44 @@
+main>section{
+	display: flex;
+	justify-content: space-between;
+}
+main>section>article{
+	width: 40%;
+}
+#contact_map{
+	width: 100%;
+}
+main>section>article:nth-child(1)>div>div{
+	display: flex;
+	justify-content: space-between;
+}
+
+main>section>article:nth-child(2)>h2{
+	margin-top: 0px;
+}
+
+main>section>article:nth-child(2)>label{
+	font-weight: bold;
+}
+
+main>section>article:nth-child(2)>input{
+	width: 80%;
+}
+
+main>section>article:nth-child(2)>textarea{
+	width: 80%;
+	height: 15%;
+}
+
+.buttons{
+	padding: 1%;
+	background-color: #ffd271;
+	border-width: 0px;
+	border-radius: 10px;
+	width: 40%;
+	font-weight: bold;
+}
+.buttons:hover{
+	cursor: pointer;
+	background-color: #ffa071;
+}

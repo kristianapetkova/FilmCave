@@ -1,0 +1,162 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: Trebuchet MS, sans-serif;
+}
+main{
+	margin: 0px 10% 10% 10%; 
+}
+a{
+	text-decoration: none;
+}
+.head{
+	height: 50px;
+	background-color: black;
+	padding: 1%;
+}
+.logo{
+	display: inline-block;
+	float: left;
+	width: 15%;
+}
+.search_bar{
+	text-align: center;
+	display: inline-block;
+	width: 70%;
+	padding-top: 14px;
+	float: left;
+}
+.search_bar>button{
+	width: 40px;
+    height: 25px;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -6px;
+    background-color: #1cc2cc;
+    border: none;
+}
+.search_bar>button:hover{
+	cursor: pointer;
+	background-color: #afeeee;
+}
+#search_bar{
+	width: 300px;
+	height: 23px;
+	border-radius: 5px 0px 0px 5px;
+	border:none;
+}
+.head_icons{
+	float: left;
+	display: inline-block;
+	width: 15%;
+	padding: 10px 0px;
+}
+.logo_picture{
+	width: 150px;
+	height: auto;
+}
+.logo_picture:hover{
+
+}
+.st0{fill:#29BFCA;stroke:#FFFFFF;stroke-miterlimit:10;}
+.st1{fill:#231F20;stroke:#29BFCA;stroke-width:3;stroke-miterlimit:10;}
+.st2{fill:#29BFCA;}
+
+#icon_myprofile{
+	height: 30px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#myprofile_enter{
+	position: absolute;
+    margin-top: 9px;
+    display: none;
+    float: left;
+    clear: both;
+    background-color: #666;
+    padding: 0 2% 2% 2%;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+#icon_favourites{
+	height: 30px;
+	margin-right: 10px;
+}
+#icon_cart{
+	height: 30px;
+	margin-right: 10px;
+}
+
+
+
+.menu{
+	background-color: #1cc2cc;
+	height: 49px;
+	display: inline-block;
+	width: 100%;
+}
+.menu>ul>li{
+	display: inline-flex;
+    /* width: auto; */
+    padding: 0 15px;
+    height: 100%;
+    align-items: center;
+}
+.menu>ul{
+	float: right;
+    margin: 0px;
+    height: 100%;
+    display: flex;
+}
+.menu>ul>li>a{
+	text-decoration: none;
+	color: black;
+}
+
+.menu>ul>li:hover{
+	background-color: #afeeee;
+	cursor: pointer;
+
+}
+
+
+footer{
+	height: 15%;
+	background-color: black;
+	padding:  2% 10%;
+}
+footer>div{
+	display: inline-flex;
+	justify-content: center;
+	width: max-content;
+	flex-wrap: wrap;
+    align-items: center;
+    margin: 0 5%;
+}
+footer>div>ul{
+
+}
+
+footer>div>ul>li{
+
+}
+footer>div>ul>li>a{
+	text-decoration: none;
+	color:white;
+}
+footer>div>ul>li>a:hover{
+
+}
+
+footer>div>div{
+	color:white;
+	display: block;
+}
+
+.footer_icons{
+	height: 48px;
+
+}
+
+

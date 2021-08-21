@@ -1,0 +1,83 @@
+aside{
+	display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 200px;
+    justify-content: space-around;
+    margin-right: 2%;
+
+}
+.side_menu{
+	background-color: #afeeee;
+	border:none;
+	border-radius: 5px;
+	padding: 5px 0px;
+	font-weight: bold;
+}
+.side_menu:hover{
+	cursor: pointer;
+	background-color: #1cc2cc;
+}
+.active{
+	background-color: #1cc2cc;
+}
+
+main>section{
+	display: flex;
+}
+main>section>section{
+	width: 75%;
+    padding-left: 2%;
+    border-left: 1px solid black;
+}
+h1{
+	font-size: 2em;
+	margin-top: 0.5em;
+}
+
+/*---*/
+
+.buttons{
+	padding: 1%;
+	background-color: #ffd271;
+	border-width: 0px;
+	border-radius: 10px;
+	width: 20%;
+	font-weight: bold;
+	margin-left: 40%;
+}
+.buttons:hover{
+	cursor: pointer;
+	background-color: #ffa071;
+}
+
+.buttons_return{
+	padding: 1%;
+	background-color: #ffd271;
+	border-width: 0px;
+	border-radius: 10px;
+	width: 20%;
+	font-weight: bold;
+}
+.buttons_return:hover{
+	cursor: pointer;
+	background-color: #ffa071;
+}
+
+.declaration{
+	display: flex;
+	justify-content: space-between;
+}
+.declaration>article{
+	width: 45%;
+}
+.declaration>article>input, textarea{
+	width: 90%;
+}
+textarea{
+	height: 100px;
+}
+
+#reason{
+	width: 90%;
+}

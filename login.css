@@ -1,0 +1,41 @@
+
+/*---*/
+
+main{
+	margin: 0px 10% 10% 10%; 
+}
+.login_data{
+	width: 70%;
+	height: 26px;
+}
+.forgotenpass{
+	line-height: 2;
+}
+h2>a:hover{
+	text-decoration: underline;
+}
+
+.buttons{
+	padding: 1%;
+	background-color: #ffd271;
+	border-width: 0px;
+	border-radius: 10px;
+	width: 20%;
+	font-weight: bold;
+}
+.buttons:hover{
+	cursor: pointer;
+	background-color: #ffa071;
+}
+form>span>a{
+	color:black;
+}
+
+.error_msg{
+	border:none;
+	width: 70%;
+	background-color: white;
+	font-style: italic;
+	font-weight: bold;
+	color:red;
+}
