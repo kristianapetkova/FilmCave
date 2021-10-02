@@ -11,7 +11,7 @@
 	font-weight: bold;
 }
 aside{
-	width: 30%;
+	width: 20%;
     margin-right: 3%;
 }
 .panel>ul>li{
@@ -23,11 +23,18 @@ main>section>aside>div.panel:nth-child(2){
 }
 
 /*section*/
-
+form>section>section{
+	width: 83%;
+}
 .pg_product{
 	margin: 1%;
 	padding: 5px;
 	border:1px ridge transparent;
+  height: 420px;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 156px;
 }
 .pg_product:hover{
 	border:1px ridge #9ecaed;
@@ -35,32 +42,134 @@ main>section>aside>div.panel:nth-child(2){
 	cursor: pointer;
 	box-shadow: 0 0 10px #9ecaed;
 }
-.stars{
-	height: 18px;
-}
+
 .heart, .cart{
 	height: 24px;
 }
 .ngp_poster{
-	height: 250px;
-	
+	height: 235px;
+	width: 99%
 }
-h3, h5, h4{
+
+.stars{
+	height: 18px;
+  fill:none;
+  stroke:#ffd271;
+  stroke-width:40px;
+}
+.stars:hover{
+  fill:#ffd271;
+}
+.heart{
+  fill:none;
+  stroke:red;
+  padding: 2%;
+  width: 105%;
+}
+
+.heart:hover{
+  fill:red;
+  cursor: pointer;
+}
+
+.rating{
+  display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h3, .type, h4{
 	margin: 0px;
+}
+
+.first_line{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.price_cart{
+  display: flex;
+  flex-direction: column;
+
+}
+.heart_button{
+  background-color: white;
+  border:none;
+}
+.promo{
+  color: #dadada;
+  text-decoration: line-through;
+  font-size: 0.9em;
+}
+
+.buttons{
+  padding: 5%;
+  background-color: #ffd271;
+  border-width: 0px;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: bold;
+  margin-top:2%;
+}
+.buttons:hover{
+  cursor: pointer;
+  background-color: #ffa071;
 }
 
 main>h5:nth-child(1){
 	margin: 22.7px 0px;
 }
-
-main>section{
+main>section>section{
+	width: 100%;
+}
+main>form>section{
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
+	width: 100%;
 }
 .products{
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
     flex-wrap: wrap;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close_new_cart, .close_promo_cart, .close_new_fav, .close_promo_fav {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close_new_cart:hover, .close_promo_cart:hover, .close_new_fav:hover, .close_promo_fav:hover,
+.close_new_cart:focus, .close_promo_cart:focus, .close_new_fav:focus, .close_promo_fav:focus{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

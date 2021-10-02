@@ -74,6 +74,7 @@
 
 .heart:hover{
   fill:red;
+  cursor: pointer;
 }
 
 .rating{

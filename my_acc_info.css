@@ -154,3 +154,16 @@ main>section>section>button{
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+.search_bar>form>button{
+	width: 40px;
+    height: 25px;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -6px;
+    background-color: #1cc2cc;
+    border: none;
+}
+.search_bar>form>button:hover{
+	cursor: pointer;
+	background-color: #afeeee;
+}

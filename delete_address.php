@@ -19,6 +19,5 @@ echo $_SESSION["id_user"];
 
     $rows= mysqli_stmt_num_rows($call);
     echo $id_address;
-    echo "kur";
 
 ?>

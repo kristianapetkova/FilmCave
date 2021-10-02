@@ -3,9 +3,19 @@ session_start();
 $id_favourite=$_POST["id_favourite"];
 $id_cart=$_POST["id_cart"];
 echo $id_favourite;
-$email=$_SESSION["email"];
 $return_page=$_SESSION["filename"];
 $_SESSION["error_msg_fav_cart"]="false";
+
+if(isset($_POST["filter"]))
+{
+	$_SESSION["years"]=$_POST["filter_year"];
+	$_SESSION["genre"]=$_POST["filter_genre"];
+	$_SESSION["serie"]=$_POST["filter_serie"];
+	$_SESSION["lang"]=$_POST["filter_lang"];
+	$_SESSION["sub"]=$_POST["filter_sub"];
+
+}
+
 
 if($_SESSION["email"]){
 	$conn=mysqli_connect("localhost","root","","filmcave");
@@ -92,5 +102,25 @@ else{
 
 
 
-
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		filter_year
+			<input type="text" name="filter_year" id="filter_year" style="display: block;" placeholder="filter_year">
+			filter_serie
+			<input type="text" name="filter_serie" id="filter_serie" style="display: block;" placeholder="filter_serie">
+			filter_genre
+			<input type="text" name="filter_genre" id="filter_genre" style="display: block;" placeholder="filter_genre">
+			filter_lang
+			<input type="text" name="filter_lang" id="filter_lang" style="display: block;" placeholder="filter_lang">
+			filter_sub
+			<input type="text" name="filter_sub" id="filter_sub" style="display: block;" placeholder="filter_sub">
+	</form>
+</body>
+</html>
